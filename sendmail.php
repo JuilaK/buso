@@ -7,7 +7,6 @@
 
     $mail = new PHPMailer(true);
     $mail->CharSet = 'UTF-8';
-    $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
 
     //От кого письмо
@@ -39,7 +38,7 @@
     $mail->Body = $body;
 
     //Отправка
-    if (!$mail->send()){
+    /*if (!$mail->send()){
         $message = 'Ошибка отправки данных формы';
     } else {
         $message = 'Данные отправлены!';
@@ -47,5 +46,6 @@
 
     $response = ['message => $message'];
     header('Content-type: application/json');
-    echo json_encode($response);
+    echo json_encode($response);*/
+    echo $_POST['phone'];
 ?>
