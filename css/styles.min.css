@@ -138,19 +138,11 @@
   0% {
     box-shadow: none;
   }
+  50% {
+    box-shadow: 0 0 1.8rem #0070C1, inset 0 0 0.8rem #0070C1;
+  }
   100% {
     box-shadow: none;
-  }
-}
-@keyframes vertical-move {
-  0% {
-    bottom: 5.4rem;
-  }
-  50% {
-    bottom: 6.4rem;
-  }
-  100% {
-    bottom: 5.4rem;
   }
 }
 @keyframes fade {
@@ -684,11 +676,11 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 
 .btn-primary {
   background-color: #0070C1;
-  transition: 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 .btn-primary span {
   color: #FFFFFF;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 .btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary.active {
   background-color: #00528e;
@@ -696,11 +688,11 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 .btn-primary-outline {
   background-color: rgba(0, 16, 28, 0.2);
   border-color: #0070C1;
-  transition: 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 .btn-primary-outline span {
   color: #FFFFFF;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 .btn-primary-outline:focus, .btn-primary-outline:hover, .btn-primary-outline:active, .btn-primary-outline.active {
   background-color: #0070C1;
@@ -715,6 +707,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   background-color: rgba(0, 16, 28, 0.2);
   color: #FFFFFF;
   text-align: center;
+  transition: background-color 0.3s;
   width: 5.2rem;
   height: 5.2rem;
 }
@@ -733,6 +726,9 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
     font-size: 1.8rem;
     line-height: 3.8rem;
   }
+}
+.btn-circle:hover [class^=icon-], .btn-circle:active [class^=icon-], .btn-circle:focus [class^=icon-] {
+  background-color: #0070C1;
 }
 .btn-circle .icon-mail:before,
 .btn-circle .icon-telegram:before {
@@ -1015,7 +1011,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 
 .cta {
   min-height: 100vh;
-  background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), top right/cover url("../images/bg-block1.jpg");
+  background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), center center/cover url("../images/bg.jpg");
 }
 @media (max-width: 767.98px) {
   .cta {
@@ -1088,6 +1084,10 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
     margin-left: 0;
     margin-top: 1.6rem;
   }
+}
+
+.cta__btn-call [class^=icon-] {
+  animation: pulsing 2s infinite;
 }
 
 .cta__messangers {
@@ -1277,12 +1277,14 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 }
 
 .stages__title {
-  font-size: 2rem;
-  font-weight: 600;
   white-space: nowrap;
 }
 .stages__title [class^=icon-] {
   margin-right: 0.8rem;
+}
+.stages__title > * {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .stages__decription {
@@ -1298,6 +1300,11 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 .goods {
   background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), center right/cover url("../images/bg-block2.jpg");
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .goods {
+    background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), top left/cover url("../images/bg-block2-mobile.jpg");
+  }
 }
 
 .goods__lists {
@@ -1331,7 +1338,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 }
 @media (max-width: 767.98px) {
   .goods__list {
-    padding-top: 4rem;
+    padding: 3.2rem 1.6rem 1.6rem 1.6rem;
   }
 }
 @media (max-width: 479.98px) {
@@ -1362,6 +1369,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   display: flex;
   align-items: center;
   font-size: 2rem;
+  line-height: 1.1;
   text-align: left;
 }
 @media (max-width: 767.98px) {
@@ -1553,6 +1561,11 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), top left/cover url("../images/bg-contacts.jpg");
   border-bottom: thin solid #0070C1;
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .contacts {
+    background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), top center/cover url("../images/bg-contacts-mobile.jpg");
+  }
 }
 
 .contacts__subtitle {
@@ -1807,10 +1820,8 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 
 .btns-panel {
   display: none;
-  padding: 0.8rem 1.6rem;
+  padding-top: 1.6rem;
   width: 100%;
-  background-color: #00101C;
-  text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -1832,6 +1843,13 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   .btns-panel .btn + .btn {
     margin-left: 0.8rem;
   }
+}
+
+.btns-panel__wrapper {
+  padding: 0.8rem 1.6rem;
+  background-color: #00101C;
+  box-shadow: 0 -0.4rem 0.8rem rgba(0, 112, 193, 0.3);
+  text-align: center;
 }
 
 @media (max-width: 767.98px) {
