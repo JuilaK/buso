@@ -1035,12 +1035,12 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 
 .cta {
   min-height: 100vh;
-  background: linear-gradient(181.07deg, #00101C 0%, rgba(0, 16, 28, 0.8) 49.48%, #00101C 100%), bottom center/cover url("../images/bg.jpg");
+  background: linear-gradient(181.07deg, #00101C 0%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 100%), bottom center/cover url("../images/bg.jpg");
 }
 @media (max-width: 767.98px) {
   .cta {
     padding-top: 8rem;
-    background: linear-gradient(181.07deg, #00101C 0%, rgba(0, 16, 28, 0.8) 49.48%, #00101C 100%), top left/cover url("../images/bg-mobile.jpg");
+    background: linear-gradient(181.07deg, #00101C 0%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 100%), top left/cover url("../images/bg-mobile.jpg");
   }
 }
 
@@ -1321,12 +1321,12 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 }
 
 .goods {
-  background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), center right/cover url("../images/bg-block2.jpg");
+  background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.7) 49.48%, #00101C 99.08%), center right/cover url("../images/bg-block2.jpg");
   text-align: center;
 }
 @media (max-width: 767.98px) {
   .goods {
-    background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), top left/cover url("../images/bg-block2-mobile.jpg");
+    background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.7) 49.48%, #00101C 99.08%), top left/cover url("../images/bg-block2-mobile.jpg");
   }
 }
 
@@ -1581,13 +1581,13 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 }
 
 .contacts {
-  background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), top left/cover url("../images/bg-contacts.jpg");
+  background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.7) 49.48%, #00101C 99.08%), top left/cover url("../images/bg-contacts.jpg");
   border-bottom: thin solid #b33600;
   text-align: center;
 }
 @media (max-width: 767.98px) {
   .contacts {
-    background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 99.08%), top center/cover url("../images/bg-contacts-mobile.jpg");
+    background: linear-gradient(181.07deg, #00101C 0.9%, rgba(0, 16, 28, 0.7) 49.48%, #00101C 99.08%), top center/cover url("../images/bg-contacts-mobile.jpg");
   }
 }
 
