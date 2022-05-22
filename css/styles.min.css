@@ -1059,7 +1059,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 }
 @media (max-width: 767.98px) {
   .cta__wrapper {
-    min-height: calc(100vh - 4rem - 8rem);
+    min-height: calc(100vh - 4rem - 8rem - 4.4rem);
   }
 }
 
@@ -1077,7 +1077,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 }
 @media (max-width: 767.98px) {
   .cta__info {
-    margin-bottom: 32rem;
+    margin-bottom: 17rem;
   }
 }
 
