@@ -541,10 +541,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-:root {
-  --vh: 1vh;
-}
-
 * {
   box-sizing: border-box;
   color: #FFFFFF;
@@ -1039,11 +1035,11 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 
 .cta {
   min-height: 100vh;
-  min-height: calc(var(--vh) * 100);
   background: linear-gradient(181.07deg, #00101C 0%, rgba(0, 16, 28, 0.6) 49.48%, #00101C 100%), bottom center/cover url("../images/bg.jpg");
 }
 @media (max-width: 767.98px) {
   .cta {
+    min-height: calc(100vh - 4.4rem);
     padding-top: 8rem;
     background: linear-gradient(181.07deg, #00101C 0%, rgba(0, 16, 28, 0.4) 49.48%, #00101C 100%), bottom right/cover url("../images/bg-mobile.jpg");
   }
