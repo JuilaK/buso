@@ -139,7 +139,7 @@
     box-shadow: none;
   }
   50% {
-    box-shadow: 0 0 1.8rem #da4100, inset 0 0 0.8rem #da4100;
+    box-shadow: 0 0 2.4rem #da4100, inset 0 0 0.8rem #da4100;
   }
   100% {
     box-shadow: none;
@@ -151,30 +151,6 @@
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes fade-bottom {
-  from {
-    opacity: 0.1;
-    visibility: hidden;
-    transform: translateY(-6rem);
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
-@keyframes fade-top {
-  from {
-    opacity: 0.1;
-    visibility: hidden;
-    transform: translateY(-6rem);
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -598,7 +574,7 @@ h1 {
 }
 @media (max-width: 767.98px) {
   h1 {
-    font-size: 4.6rem;
+    font-size: 5.6rem;
   }
 }
 
@@ -633,7 +609,7 @@ section, .footer {
   }
 }
 @media (max-width: 767.98px) {
-  section h2, .footer h2 {
+  section:not(.cta) h2, .footer:not(.cta) h2 {
     font-size: 2.4rem;
   }
 }
@@ -710,6 +686,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   background-color: #a73200;
 }
 .btn-primary-outline {
+  box-shadow: 0 0 0.6rem 0px #da4100;
   background-color: rgba(0, 16, 28, 0.2);
   border-color: #da4100;
   transition: background-color 0.3s, border-color 0.3s;
@@ -729,6 +706,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   border-radius: 50%;
   padding: 0;
   background-color: rgba(0, 16, 28, 0.6);
+  box-shadow: 0 0 0.6rem 0px #da4100;
   color: #FFFFFF;
   text-align: center;
   transition: background-color 0.3s;
@@ -1149,12 +1127,12 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   bottom: 0;
   left: 0;
 }
-@media (max-width: 991.98px) and (min-width: 767.98px) {
+@media (max-width: 991.98px) and (min-width: 479.98px) {
   .cta__benefits {
     display: none;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 479.98px) {
   .cta__benefits {
     flex-wrap: wrap;
     margin-left: 0.4rem;
@@ -1163,7 +1141,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 .cta__benefits_tablet {
   display: none;
 }
-@media (max-width: 991.98px) and (min-width: 767.98px) {
+@media (max-width: 991.98px) and (min-width: 479.98px) {
   .cta__benefits_tablet {
     display: flex;
     position: absolute;
@@ -1174,7 +1152,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 .cta__benefits-wrapper {
   text-align: right;
 }
-@media (max-width: 991.98px) and (min-width: 767.98px) {
+@media (max-width: 991.98px) and (min-width: 479.98px) {
   .cta__benefits-wrapper + div {
     margin-left: 1.6rem;
   }
@@ -1185,7 +1163,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   padding: 0 3.2rem;
   text-align: center;
 }
-@media (max-width: 991.98px) and (min-width: 767.98px) {
+@media (max-width: 991.98px) and (min-width: 479.98px) {
   .cta__benefits-item {
     display: inline-block;
     border: thin solid #da4100;
@@ -1193,7 +1171,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
     padding: 1.6rem 3.2rem;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 479.98px) {
   .cta__benefits-item {
     margin: 0.8rem 0.4rem 0;
     padding: 0.8rem 1.6rem;
@@ -1209,7 +1187,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
     order: 1;
   }
 }
-@media (max-width: 991.98px) and (min-width: 767.98px) {
+@media (max-width: 991.98px) and (min-width: 479.98px) {
   .cta__benefits-item + .cta__benefits-item {
     margin-top: 1.6rem;
   }
@@ -1877,7 +1855,7 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
 
 @media (max-width: 767.98px) {
   .footer {
-    padding-bottom: 8rem;
+    padding-bottom: 9.6rem;
   }
 }
 
@@ -1981,5 +1959,11 @@ nav a:hover::before, nav a:focus::before, nav a.active::before {
   .footer__copyright {
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer__development, .footer__development a {
+    font-size: 1.2rem;
   }
 }
