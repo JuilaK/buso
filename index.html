@@ -296,7 +296,6 @@
                     </div>                    
                     <textarea name="message" placeholder="Комментарий"></textarea>
                     <div class="contacts__form-btns">
-                        <div class="contacts__form-preview"></div>
                         <div class="contact__form-file">
                             <button type="button" class="btn btn-circle">
                                 <div class="icon-clip"></div>
@@ -304,9 +303,7 @@
                                     <div class="btn-title">Прикрепить фото</div>
                                 </div>
                             </button>
-                            <div class="contacts__form-control">
-                                <!--<input accept=".jpg, .png, .jpeg" type="file" name="photos" class="contact__form-file-input">-->
-                            </div>
+                            <input accept=".jpg, .png, .jpeg" type="file" multiple name="photos" class="contact__form-file-input">
                         </div>                   
                         
                         <button type="submit" class="contacts__form-submit btn btn-primary">Отправить заявку</button>
